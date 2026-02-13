@@ -1,0 +1,149 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.form-container {
+    margin-top: 30px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px;
+}
+/* Sticky Header */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #141e30, #243b55);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #00f7ff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #243b55, #141e30);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-icons a {
+    margin: 10px;
+    color: #00f7ff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #243b55;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+.contact-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    background: #00f7ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
+section, 
+.slideshow-container, 
+.form-container, 
+footer {
+    scroll-margin-top: 80px;
+}
+
